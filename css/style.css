@@ -1,0 +1,155 @@
+
+
+
+
+/*paleta de colores generales*/
+:root{
+	--blanco: #ffffff;
+	--primario: #ffc107;
+	--oscuro: #212121;
+	--contenedor1:#000000bf;
+    --contenedor2:#0000008c;
+	--gris:#757575;
+}
+
+h1{
+	font-size: 2.8rem;
+}
+p{
+    
+    font-size: 1.7rem;
+}
+
+body{
+	
+	background-color: var(--oscuro);
+	font-family: "Roboto", sans-serif;
+    background-image: url(../images/fondo2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+    
+}
+.contenedorHeader{
+    display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+    padding: 0.5rem;
+}
+.contenedorHeader a{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--blanco);
+    border: 1px solid white;
+    border-radius: 3rem;
+    padding:0.5rem 2rem ;
+    transition: background 1s;
+    color: var(--blanco);
+}
+.contenedorHeader a:hover{
+    background: var(--blanco);
+    color: var(--primario);
+    
+
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns: 20% 80%;
+	margin: 0;
+    height: 100vh;
+}
+
+
+.izquierda{
+    background-color: var(--contenedor1);
+    display: block;
+    justify-content: center;
+    height: 100%;
+    padding-top: 5rem;
+    align-content:top
+}
+
+.derecha{
+    background-color: var(--contenedor2);
+    display: block;
+    justify-content: center;
+    height: 100%;
+    align-content:top;
+    
+}
+
+.titulo{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color:var(--primario);
+    text-align:center;
+    transform: scale(2.4, 1);
+    letter-spacing: 6px;
+}
+
+.titulo2{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color:var(--primario);
+    text-align:center;
+}
+
+.subtitulo{
+    font-weight: 100;
+    font-weight: 400;
+    color:var(--blanco);
+    text-align: center;
+}
+
+/*Imágenes*/
+.logoHabitar{
+    background-image: url(../images/logoHabitar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5rem;
+    width: 10rem;
+    height: 5rem;
+}
+
+/* Sección servicios */
+.servicio{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h2{
+    color: var(--blanco);
+    font-weight: normal;
+}
+
+.servicio p{
+    color: var(--blanco);
+    text-align: center;
+    line-height: 1;
+}
+
+.servicio .iconos{
+height: 120px;
+width: 120px;
+background-color: var(--primario);
+border-radius: 50%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.footer{
+    background-color: var(--contenedor2);
+    font-size: 1.5rem;
+	text-align: center;
+    font-weight: 100;
+    color:var(--blanco);
+}
