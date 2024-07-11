@@ -16,8 +16,9 @@ h1{
 	font-size: 2.8rem;
 }
 p{
-    
+    color: var(--blanco);
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 body{
@@ -43,12 +44,13 @@ body{
 }
 
 .derecha{
+    
     background-color: var(--contenedor2);
-    display: block;
-    justify-content: center;
     height: 100vh;
-    align-content:top;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
+
 .contenedorHeader{
     display: flex;
 	flex-direction:row;
