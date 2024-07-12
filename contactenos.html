@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuestra Compañía</title>
+    <title>Casos de Éxito</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,42 +50,52 @@
             <nav class="contenedorHeader">
               <a href="index.html">Inicio</a>
               <a href="nuestracompania.html">Nuestra Compañía</a>
-              <a href="Casosexito.html">Casos de Éxito</a>
+              <a href="casosexito.html">Casos de Éxito</a>
               <a href="contactenos.html">Contáctenos</a>
             </nav>
           </div>
         </header>
-        <br/>
-        <br/>
         <main>
-          <div>
-              <h2 class="titulo">SOMOS HABITAR</h2>
-              <p class="titulo2">Diseñamos y Construimos un mejor futuro</p>
-              <p>Desde el año 2015 reunimos la gran experiencia de arquitectos, urbanistas e ingenieros especializados en diferentes disciplinas          
-                  para crear nuestra empresa, enfocada en formulación de proyectos urbanos, de arquitectura y construcción</p>
-          </div>
-          <br>
-          <div>
-              <h2 class="titulo2">Nuestro Director</h2>
-              <p class="subtitulo">Henry Ramírez Valero</p>
-          </div>
-          <div class="fotoHR">
-              <img src="images/fotoHR.jpg" width="200" height="200"/>
-          </div>
-          <div> 
-              <p class="subtitulo">Arquitecto | master en planeación urbana y regional | BIM manager</p>
-              <p class="cita">"Como arquitecto y diseñador urbano he enfrentado satisfactoriamente los desafíos de la construcción de la ciudad contemporánea. Buscar el equilibrio
-                  en el desarrollo territorial en cada propuesta, independiente de su escala es el propósito fundamental de mi ejercicio profesional".
-              </p>
-              
-          </div>
-          
-          <br>
-          <br>
-      </main>
+            <h2>Contacto:</h2>
+			<form class="formulario" name="contactenos" id="contactenos" action="contactenos.html" method="POST">
+				<fieldset>
+					<legend>Contáctenos diligenciando todos los campos</legend>
+
+					<div>
+						<div class="campo">
+							<label>Nombre Completo</label>
+							<input class="input-text" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+						</div>
+						<div class="campo">
+							<label>Teléfono Celular</label>
+							<input class="input-text" type="tel" name="celular" id="celular" placeholder="Tu número">
+						</div>
+
+						<div class="campo">
+							<label>Correo Electrónico</label>
+							<input class="input-text" type="email" name="correo" id="correo" placeholder="Tu correo">
+						</div>
+
+						<div class="campo">
+							<label>Mensaje</label>
+							<textarea class="input-text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+						</div>
+					</div>
+					<div>
+						<input class="boton enviar"  type="submit"name="enviar" id="enviar" value="Contactar">
+					</div>
+
+				</fieldset>
+
+			</form>
+
+
+        </main>
+        
         <footer>
             <p class="footer">Todos los derechos reservados. Habitar Consultores & constructores SAS ®</p>
         </footer>
   </body>
+
   <script src="js/scripts.js"></script>
 </html>
