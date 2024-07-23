@@ -7,7 +7,6 @@ const datos = {
 	correo: '',
 	mensaje: ''
 }
-
 nombre.addEventListener('input', leerTexto);
 celular.addEventListener('input', leerTexto);
 correo.addEventListener('input', leerTexto);
